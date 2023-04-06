@@ -1,6 +1,6 @@
 'use client'
 import { EB_Garamond } from 'next/font/google'
-import rose from '../public/rose.svg'
+import rose from '@/public/Rose.svg'
 import Image from 'next/image'
 import React, { MutableRefObject } from 'react'
 const garamond = EB_Garamond({ weight:'400', subsets: ['latin'] })
