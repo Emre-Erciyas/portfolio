@@ -15,7 +15,7 @@ interface Props{
 export default function Projects(props: Props) {
   const [isVisible, setIsVisible] = React.useState(false);
   const ref = React.useRef(null);
-
+  let observerRefValue: MutableRefObject<HTMLDivElement> | null = null;
   React.useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -28,11 +28,12 @@ export default function Projects(props: Props) {
 
     if (ref.current) {
       observer.observe(ref.current);
+      observerRefValue = ref.current
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (observerRefValue && observerRefValue.current) {
+        observer.unobserve(observerRefValue.current);  
       }
     };
   }, []);

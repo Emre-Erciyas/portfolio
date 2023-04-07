@@ -6,7 +6,6 @@ import {AiFillLinkedin, AiFillGithub, AiFillFilePdf} from 'react-icons/ai'
 import Link from 'next/link'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-
 const garamond = EB_Garamond({ weight: '400', subsets: ['latin'] })
 
 interface Props{
@@ -20,6 +19,7 @@ export default function Footer(props: Props) {
   const [message, setMessage] = useState('')
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
+    let observerRefValue: MutableRefObject<HTMLDivElement> | null = null;
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
@@ -31,11 +31,12 @@ export default function Footer(props: Props) {
 
     if (formRef.current) {
       observer.observe(formRef.current);
+      observerRefValue = formRef.current
     }
 
     return () => {
-      if (formRef.current) {
-        observer.unobserve(formRef.current);
+      if (observerRefValue && observerRefValue.current) {
+        observer.unobserve(observerRefValue.current);
       }
     };
   }, []);
@@ -129,9 +130,9 @@ export default function Footer(props: Props) {
       <div className='relative w-full bg-[#494954] h-24 3xl:h-40 md:h-24 flex flex-col xs:flex-row justify-center xs:justify-start items-center'>
         <h1 className='text-[#fefeff] text-xs xs:text-base md:text-xl 3xl:text-3xl xs:ml-10 md:ml-14 tracking-wide'>Copyright © 2023. All rights are reserved</h1>
         <div className='flex xs:absolute xs:right-5 3xl:right-10 mt-4 xs:mt-0'>
-            <Link href={'https://www.linkedin.com/in/emreerciyas/'} target='_blank'><AiFillLinkedin className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 3xl:w-24 3xl:h-24 mr-2 md:mr-8 ml-0.5' /></Link>
-            <Link href={'https://github.com/Emre-Erciyas'} target='_blank'><AiFillGithub className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 mr-2 md:mr-8 3xl:w-24 3xl:h-24' /></Link>
-            <Link href={'https://drive.google.com/file/d/1i0xaURPajxnPuuFRLP8ao21B6gMZELdZ/view?usp=sharing'} target='_blank'><AiFillFilePdf className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 3xl:w-24 3xl:h-24' /></Link>
+            <Link href={'https://www.linkedin.com/in/emreerciyas/'}><AiFillLinkedin className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 3xl:w-24 3xl:h-24 mr-4 md:mr-8 ml-0.5' /></Link>
+            <Link href={'https://github.com/Emre-Erciyas'} ><AiFillGithub className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 mr-4 md:mr-8 3xl:w-24 3xl:h-24' /></Link>
+            <Link href={'https://drive.google.com/file/d/1i0xaURPajxnPuuFRLP8ao21B6gMZELdZ/view?usp=sharing'} ><AiFillFilePdf className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 3xl:w-24 3xl:h-24' /></Link>
         </div>
         
       </div>
