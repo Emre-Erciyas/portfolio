@@ -22,7 +22,7 @@ export default function Projects(props: Props) {
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 1,
+        threshold: 0.9,
       }
     );
 
@@ -38,7 +38,7 @@ export default function Projects(props: Props) {
   }, []);
   return (
     <div ref={props.projectsRef} className={`w-full bg-gradient-to-br to-[#B1B1BD] from-[#fefeff] m-0 flex flex-col items-center md:items-start`}>
-      <h1 ref={ref} className={`${isVisible ? 'opacity-100': 'opacity-0'} delay-100 duration-1000 text-[#2B2B33] text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl mb-8 tracking-wide mt-0 lg:ml-[2%] md:ml-9 xl:ml-[10%] pl-1 pt-5 ${garamondBold.className}`}>Projects</h1>
+      <h1 ref={ref} className={`${isVisible ? 'opacity-100': 'opacity-0'} duration-1000 text-[#2B2B33] text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl mb-8 tracking-wide mt-0 lg:ml-[2%] md:ml-9 xl:ml-[10%] pl-1 pt-5 ${garamondBold.className}`}>Projects</h1>
       <div className='w-full flex flex-col justify-center items-center lg:items-baseline'>
         <Project 
           staticIMG = {Crush} 

@@ -29,7 +29,7 @@ export default function Project(props: Props){
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.5,
+        threshold: 0.6,
       }
     );
 
@@ -44,7 +44,7 @@ export default function Project(props: Props){
     };
   }, []);
   return (
-    <div ref={ref} className={`${isVisible ? 'opacity-100': 'opacity-0'} delay-100 duration-1000 relative w-[95%] md:h-[400px] xl:h-[440px] xl:w-3/4 bg-[#e5e5ee] my-3 md:my-5 rounded-lg shadow-lg md:ml-5 xl:ml-[10%] flex flex-col items-center md:flex-row`}>
+    <div ref={ref} className={`${isVisible ? 'opacity-100': 'opacity-0'} duration-1000 relative w-[95%] md:h-[400px] xl:h-[440px] xl:w-3/4 bg-[#e5e5ee] my-3 md:my-5 rounded-lg shadow-lg md:ml-5 xl:ml-[10%] flex flex-col items-center md:flex-row`}>
      <Link className='relative rounded-lg md:m-5 mt-5  md:mr-0 w-[95%] md:max-w-[min(480px,_60%)] lg:max-w-[min(560px,_60%)] xl:max-w-[min(600px,_60%)] overflow-hidden' href={props.source} target='_blank'>
       <Image 
           className='w-full'

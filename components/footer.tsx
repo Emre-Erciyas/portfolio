@@ -25,7 +25,7 @@ export default function Footer(props: Props) {
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.5,
+        threshold: 0.6,
       }
     );
 
@@ -89,7 +89,7 @@ export default function Footer(props: Props) {
         pauseOnHover
         theme="dark"
       />
-      <form ref = {formRef} onSubmit={handleSubmit} className={`${isVisible ? 'opacity-100': 'opacity-0'} delay-100 duration-1000 flex flex-col justify-center items-center`}>
+      <form ref = {formRef} onSubmit={handleSubmit} className={`${isVisible ? 'opacity-100': 'opacity-0'} duration-1000 flex flex-col justify-center items-center`}>
         <h1 className={`text-[#2B2B33] text-3xl lg:text-4xl xl:text-5xl 3xl:text-7xl my-10 3xl:my-14`}>Contact me</h1>
         <div className='flex flex-col justify-center items-center'>
           <div className='w-[90vw] xs:w-80 sm:w-[25rem] 3xl:w-[40rem] flex flex-col  xs:flex-row xs:justify-between xs:items-center my-2'>
