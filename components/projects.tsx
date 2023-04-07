@@ -15,8 +15,8 @@ interface Props{
 export default function Projects(props: Props) {
   const [isVisible, setIsVisible] = React.useState(false);
   const ref = React.useRef(null);
-  let observerRefValue: MutableRefObject<HTMLDivElement> | null = null;
   React.useEffect(() => {
+    let observerRefValue: MutableRefObject<HTMLDivElement> | null = null;
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);

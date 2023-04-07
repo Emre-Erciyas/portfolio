@@ -8,7 +8,7 @@ import Header from '@/components/header'
 import Projects from '@/components/projects'
 import About from '@/components/about'
 import Footer from '@/components/footer'
-import { useEffect, useRef, useState} from 'react'
+import { MutableRefObject, useEffect, useRef, useState} from 'react'
 
 const garamond = EB_Garamond({ weight: '400', subsets: ['latin'] })
 
@@ -21,6 +21,8 @@ export default function Home() {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   useEffect(() => {
+    let observerRefValue1: MutableRefObject<HTMLDivElement> | null = null;
+    let observerRefValue2: MutableRefObject<HTMLDivElement> | null = null;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -50,16 +52,18 @@ export default function Home() {
 
     if (ref1.current) {
       observer.observe(ref1.current);
+      observerRefValue1 = ref1.current
     }
     if (ref2.current) {
       observer.observe(ref2.current);
+      observerRefValue1 = ref2.current
     }
     return () => {
-      if (ref1.current) {
-        observer.unobserve(ref1.current);
+      if (observerRefValue1 && observerRefValue1.current) {
+        observer.unobserve(observerRefValue1.current);
       }
-      if (ref2.current) {
-        observer.unobserve(ref2.current);
+      if (observerRefValue2 && observerRefValue2.current) {
+        observer.unobserve(observerRefValue2.current);
       }
     };
   }, []);
