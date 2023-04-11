@@ -78,7 +78,7 @@ export default function Home() {
             <div className='flex mt-4 '>
               <Link href={'https://www.linkedin.com/in/emreerciyas/'}><AiFillLinkedin className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:w-16 lg:h-16 3xl:w-24 3xl:h-24 mr-9 ml-0.5' /></Link>
               <Link href={'https://github.com/Emre-Erciyas'}><AiFillGithub className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:w-16 lg:h-16 mr-9 3xl:w-24 3xl:h-24' /></Link>
-              <Link href={'https://drive.google.com/file/d/1i0xaURPajxnPuuFRLP8ao21B6gMZELdZ/view?usp=sharing'}><AiFillFilePdf className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:w-16 lg:h-16 3xl:w-24 3xl:h-24' /></Link>
+              <Link href={'https://drive.google.com/file/d/1N_wdWPVutX7_2lnRcXygPCXcESfcuI-4/view?usp=sharing'}><AiFillFilePdf className='text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:w-16 lg:h-16 3xl:w-24 3xl:h-24' /></Link>
 
             </div>
           </div>
