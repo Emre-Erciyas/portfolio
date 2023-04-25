@@ -106,7 +106,7 @@ export default function Home() {
 							</Link>
 							<Link
 								href={
-									'https://drive.google.com/file/d/1N_wdWPVutX7_2lnRcXygPCXcESfcuI-4/view?usp=sharing'
+									'https://drive.google.com/file/d/1PiNWQ4hA2azob-IACWqq-o7qggv-q01w/view?usp=sharing'
 								}
 							>
 								<AiFillFilePdf className="text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:w-16 lg:h-16 3xl:w-24 3xl:h-24" />
