@@ -2,10 +2,9 @@
 import React, { MutableRefObject } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Fredericka_the_Great, EB_Garamond } from 'next/font/google';
+import { Fredericka_the_Great } from 'next/font/google';
 
 const txt = Fredericka_the_Great({ weight: '400', subsets: ['latin'] });
-const garamond = EB_Garamond({ weight: '700', subsets: ['latin'] });
 
 interface Props {
 	homeRef: MutableRefObject<null | HTMLDivElement>;
@@ -36,7 +35,7 @@ export default function Header(props: Props): JSX.Element {
 		props.contactRef.current!.scrollIntoView({ behavior: 'smooth' });
 	}
 	return (
-		<header className={`${garamond.className}`}>
+		<header>
 			<div className="fixed w-full z-10 bg-[#2B2B33] bg-opacity-10 opacity-70">
 				<RxHamburgerMenu
 					className="absolute right-4 3xl:right-6 top-2 h-9 w-9 text-[#fefeff] hover:cursor-pointer md:hidden"

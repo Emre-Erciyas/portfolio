@@ -4,9 +4,6 @@ import Link from 'next/link';
 import React, { MutableRefObject } from 'react';
 import { IconType } from 'react-icons/lib';
 import { HiOutlineExternalLink } from 'react-icons/hi';
-import { EB_Garamond } from 'next/font/google';
-const garamond = EB_Garamond({ weight: '400', subsets: ['latin'] });
-const garamondBold = EB_Garamond({ weight: '700', subsets: ['latin'] });
 
 interface Props {
 	staticIMG: StaticImageData;
@@ -63,13 +60,11 @@ export default function Project(props: Props) {
 				/>
 			</Link>
 			<div className="relative flex flex-col md:w-1/2 3xl:w-full items-center mx-3 md:h-[400px] xl:h-[440px]">
-				<h1
-					className={`mt-5 text-[#2B2B33] text-xl xl:text-3xl 3xl:text-5xl ${garamondBold.className}`}
-				>
+				<h1 className={`mt-5 text-[#2B2B33] text-xl xl:text-3xl 3xl:text-5xl`}>
 					{props.name}
 				</h1>
 				<p
-					className={`mt-3 3xl:mt-6 mx-3 xs:mx-6 md:mx-3 xl:mx-6 text-[#68687A] 3xl:text-3xl tracking-wide italic text-sm lg:text-lg xl:text-base ${garamond.className}`}
+					className={`mt-3 3xl:mt-6 mx-3 xs:mx-6 md:mx-3 xl:mx-6 text-[#68687A] 3xl:text-3xl tracking-wide italic text-sm lg:text-lg xl:text-base`}
 				>
 					{props.description}
 				</p>

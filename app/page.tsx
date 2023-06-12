@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import { EB_Garamond } from 'next/font/google';
 import { AiFillLinkedin, AiFillGithub, AiFillFilePdf } from 'react-icons/ai';
 import gull from '@/public/gull.png';
 import Link from 'next/link';
@@ -9,8 +8,6 @@ import Projects from '@/components/projects';
 import About from '@/components/about';
 import Footer from '@/components/footer';
 import { MutableRefObject, useEffect, useRef, useState } from 'react';
-
-const garamond = EB_Garamond({ weight: '400', subsets: ['latin'] });
 
 export default function Home() {
 	const home = useRef(null);
@@ -77,7 +74,7 @@ export default function Home() {
 			/>
 			<main
 				ref={home}
-				className={`relative h-screen w-full bg-gradient-to-br from-[#2B2B33] to-[#3e3e48] m-0 ${garamond.className}`}
+				className={`relative h-screen w-full bg-gradient-to-br from-[#2B2B33] to-[#3e3e48] m-0`}
 			>
 				<div className=" flex flex-col h-screen top-0 justify-around items-center absolute left-[10%] lg:flex-row lg:top-1/3 lg:h-fit w-4/5">
 					<div

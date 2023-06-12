@@ -1,12 +1,10 @@
 'use client';
-import { EB_Garamond } from 'next/font/google';
 import { MutableRefObject, useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { AiFillLinkedin, AiFillGithub, AiFillFilePdf } from 'react-icons/ai';
 import Link from 'next/link';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const garamond = EB_Garamond({ weight: '400', subsets: ['latin'] });
 
 interface Props {
 	contactRef: MutableRefObject<null>;
@@ -81,7 +79,7 @@ export default function Footer(props: Props) {
 	return (
 		<footer
 			ref={props.contactRef}
-			className={`relative w-full bg-gradient-to-br to-[#B1B1BD] from-[#fefeff] m-0 flex flex-col justify-center ${garamond.className}`}
+			className={`relative w-full bg-gradient-to-br to-[#B1B1BD] from-[#fefeff] m-0 flex flex-col justify-center`}
 		>
 			<ToastContainer
 				position="top-right"

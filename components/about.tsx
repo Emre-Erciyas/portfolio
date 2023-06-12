@@ -1,9 +1,7 @@
 'use client';
-import { EB_Garamond } from 'next/font/google';
 import rose from '@/public/Rose.svg';
 import Image from 'next/image';
 import React, { MutableRefObject } from 'react';
-const garamond = EB_Garamond({ weight: '400', subsets: ['latin'] });
 
 interface Props {
 	aboutRef: MutableRefObject<null>;
@@ -68,7 +66,6 @@ export default function About(props: Props) {
 			<article
 				data-id="0"
 				ref={ref1}
-				style={garamond.style}
 				className={`${
 					areVisible[0] ? 'opacity-100' : 'opacity-0'
 				} duration-1000 m-12 flex flex-col justify-center items-center lg:items-start max-w-[80%] md:max-w-[70%] lg:max-w-[45%]`}

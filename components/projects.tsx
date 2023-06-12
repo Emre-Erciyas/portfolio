@@ -9,9 +9,6 @@ import {
 	SiTypescript,
 } from 'react-icons/si';
 import Portfolio from '@/public/Portfolio.svg';
-import { EB_Garamond } from 'next/font/google';
-
-const garamondBold = EB_Garamond({ weight: '700', subsets: ['latin'] });
 
 interface Props {
 	projectsRef: MutableRefObject<null>;
@@ -51,9 +48,7 @@ export default function Projects(props: Props) {
 				ref={ref}
 				className={`${
 					isVisible ? 'opacity-100' : 'opacity-0'
-				} duration-1000 text-[#2B2B33] text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl mb-8 tracking-wide mt-0 lg:ml-[2%] md:ml-9 xl:ml-[10%] pl-1 pt-5 ${
-					garamondBold.className
-				}`}
+				} duration-1000 text-[#2B2B33] text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl mb-8 tracking-wide mt-0 lg:ml-[2%] md:ml-9 xl:ml-[10%] pl-1 pt-5`}
 			>
 				Projects
 			</h1>
