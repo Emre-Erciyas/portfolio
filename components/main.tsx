@@ -37,7 +37,7 @@ export default function main(props: Props) {
 						</Link>
 						<Link
 							href={
-								'https://drive.google.com/file/d/1nBsQvcqsw5ua6RNIvgBDP8KUaUPBCGrZ/view?usp=sharing'
+								'https://drive.google.com/file/d/1q0NWl0bayIyE0gSQwophc0PoJ1U8WPaS/view?usp=share_link'
 							}
 						>
 							<AiFillFilePdf className="text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:w-16 lg:h-16 3xl:w-24 3xl:h-24" />
