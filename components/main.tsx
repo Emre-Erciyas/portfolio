@@ -37,7 +37,7 @@ export default function main(props: Props) {
 						</Link>
 						<Link
 							href={
-								'https://drive.google.com/file/d/1PiNWQ4hA2azob-IACWqq-o7qggv-q01w/view?usp=sharing'
+								'https://drive.google.com/file/d/1NVNXRMAQa7zwxC5YCJp1dkj1bmh5cXyZ/view?usp=sharing'
 							}
 						>
 							<AiFillFilePdf className="text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-12 w-12 sm:h-14 sm:w-14 md:h-14 md:w-14 lg:w-16 lg:h-16 3xl:w-24 3xl:h-24" />
@@ -48,7 +48,7 @@ export default function main(props: Props) {
 					<Image
 						src={gull}
 						alt="gull-img"
-						className="h-24 w-48 sm:h-32 sm:w-64 3xl:h-48 3xl:w-96"
+						className="w-48 h-24 sm:h-32 sm:w-64 3xl:h-48 3xl:w-96"
 					/>
 				</div>
 			</div>

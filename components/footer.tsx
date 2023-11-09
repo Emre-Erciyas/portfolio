@@ -105,7 +105,7 @@ export default function Footer(props: Props) {
 				>
 					Contact me
 				</h1>
-				<div className="flex flex-col justify-center items-center">
+				<div className="flex flex-col items-center justify-center">
 					<div className="w-[90vw] xs:w-80 sm:w-[25rem] 3xl:w-[40rem] flex flex-col  xs:flex-row xs:justify-between xs:items-center my-2">
 						<label
 							className={`text-[#2B2B33] text-base sm:text-xl 3xl:text-4xl italic`}
@@ -136,7 +136,7 @@ export default function Footer(props: Props) {
 							required
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
-							className="mt-2 xs:m-3 shadow-sm border 3xl:text-4xl 3xl:w-96 border-black w-full xs:w-52 italic rounded "
+							className="w-full mt-2 italic border border-black rounded shadow-sm xs:m-3 3xl:text-4xl 3xl:w-96 xs:w-52 "
 						/>
 					</div>
 					<div className="w-[90vw] xs:w-80 sm:w-[25rem] 3xl:w-[40rem] flex flex-col  xs:flex-row xs:justify-between mt-4 mb-10 h-24">
@@ -152,7 +152,7 @@ export default function Footer(props: Props) {
 							required
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
-							className="mt-2 xs:mt-0 xs:mr-3 3xl:text-4xl shadow-sm border border-black w-full xs:w-52 3xl:w-96 h-full italic rounded"
+							className="w-full h-full mt-2 italic border border-black rounded shadow-sm xs:mt-0 xs:mr-3 3xl:text-4xl xs:w-52 3xl:w-96"
 						/>
 					</div>
 				</div>
@@ -167,7 +167,7 @@ export default function Footer(props: Props) {
 				<h1 className="text-[#fefeff] text-xs xs:text-base md:text-xl 3xl:text-3xl xs:ml-10 md:ml-14 tracking-wide">
 					Copyright © 2023. All rights are reserved
 				</h1>
-				<div className="flex xs:absolute xs:right-5 3xl:right-10 mt-4 xs:mt-0">
+				<div className="flex mt-4 xs:absolute xs:right-5 3xl:right-10 xs:mt-0">
 					<Link href={'https://www.linkedin.com/in/emreerciyas/'}>
 						<AiFillLinkedin className="text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 3xl:w-24 3xl:h-24 mr-4 md:mr-8 ml-0.5" />
 					</Link>
@@ -176,7 +176,7 @@ export default function Footer(props: Props) {
 					</Link>
 					<Link
 						href={
-							'https://drive.google.com/file/d/1PiNWQ4hA2azob-IACWqq-o7qggv-q01w/view?usp=sharing'
+							'https://drive.google.com/file/d/1NVNXRMAQa7zwxC5YCJp1dkj1bmh5cXyZ/view?usp=sharing'
 						}
 					>
 						<AiFillFilePdf className="text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 3xl:w-24 3xl:h-24" />
