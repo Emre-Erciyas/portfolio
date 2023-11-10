@@ -176,7 +176,7 @@ export default function Footer(props: Props) {
 					</Link>
 					<Link
 						href={
-							'https://drive.google.com/file/d/1q0NWl0bayIyE0gSQwophc0PoJ1U8WPaS/view?usp=share_link'
+							'https://drive.google.com/file/d/14s0RwOHgoI6em6Q2i8Hv8h48TexfwMVn/view?usp=sharing'
 						}
 					>
 						<AiFillFilePdf className="text-[#fefeff] hover:text-[#B1B1BD] duration-[400ms] h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:w-14 lg:h-14 3xl:w-24 3xl:h-24" />
