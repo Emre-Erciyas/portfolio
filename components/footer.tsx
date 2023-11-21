@@ -48,6 +48,7 @@ export default function Footer(props: Props) {
 				formRef.current!,
 				process.env.NEXT_PUBLIC_PUBLIC_KEY
 			);
+			console.log('success');
 			setName('');
 			setEmail('');
 			setMessage('');
