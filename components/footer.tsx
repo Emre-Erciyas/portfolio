@@ -136,7 +136,7 @@ export default function Footer(props: Props) {
 							required
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
-							className="w-full mt-2 italic border border-black rounded shadow-sm xs:m-3 3xl:text-4xl 3xl:w-96 xs:w-52 "
+							className="w-full mt-2 italic border border-black rounded shadow-sm xs:m-3 3xl:text-4xl 3xl:w-96 xs:w-52"
 						/>
 					</div>
 					<div className="w-[90vw] xs:w-80 sm:w-[25rem] 3xl:w-[40rem] flex flex-col  xs:flex-row xs:justify-between mt-4 mb-10 h-24">
