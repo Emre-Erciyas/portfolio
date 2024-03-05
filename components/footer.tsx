@@ -120,12 +120,12 @@ export default function Footer(props: Props) {
 							required
 							value={name}
 							onChange={(e) => setName(e.target.value)}
-							className={`mt-2 xs:m-3 shadow-sm border 3xl:text-4xl 3xl:w-96 border-black overflow-hidden w-full xs:w-52 italic rounded`}
+							className={`pl-1 mt-2 xs:m-3 shadow-sm border 3xl:text-4xl 3xl:w-96 border-black overflow-hidden w-full xs:w-52 italic rounded`}
 						/>
 					</div>
 					<div className=" w-[90vw] xs:w-80 sm:w-[25rem] 3xl:w-[40rem] my-4 flex flex-col  xs:flex-row xs:justify-between xs:items-center">
 						<label
-							className={`text-[#2B2B33] text-base sm:text-xl 3xl:text-4xl italic`}
+							className={`pl-1 text-[#2B2B33] text-base sm:text-xl 3xl:text-4xl italic`}
 						>
 							Email:{' '}
 						</label>
@@ -136,7 +136,7 @@ export default function Footer(props: Props) {
 							required
 							value={email}
 							onChange={(e) => setEmail(e.target.value)}
-							className="w-full mt-2 italic border border-black rounded shadow-sm xs:m-3 3xl:text-4xl 3xl:w-96 xs:w-52"
+							className="w-full pl-1 mt-2 italic border border-black rounded shadow-sm xs:m-3 3xl:text-4xl 3xl:w-96 xs:w-52"
 						/>
 					</div>
 					<div className="w-[90vw] xs:w-80 sm:w-[25rem] 3xl:w-[40rem] flex flex-col  xs:flex-row xs:justify-between mt-4 mb-10 h-24">
@@ -152,7 +152,7 @@ export default function Footer(props: Props) {
 							required
 							value={message}
 							onChange={(e) => setMessage(e.target.value)}
-							className="w-full h-full mt-2 italic border border-black rounded shadow-sm xs:mt-0 xs:mr-3 3xl:text-4xl xs:w-52 3xl:w-96"
+							className="w-full h-full pl-1 mt-2 italic border border-black rounded shadow-sm xs:mt-0 xs:mr-3 3xl:text-4xl xs:w-52 3xl:w-96"
 						/>
 					</div>
 				</div>

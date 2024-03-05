@@ -80,11 +80,11 @@ export default function About(props: Props) {
 					className={`text-[#B1B1BD] sm:text-xl md:text-2xl xl:text-3xl 3xl:text-5xl p-1 md:p-4 3xl:p-10 break-words tracking-wide italic`}
 				>
 					I am Emre Erciyas, a{' '}
-					<span className="italic">Full-stack Web Developer</span>. I graduated
-					from the Department of Computer Engineering at Bilkent University in
-					2022. On the front-end I am comfortable working with React.js and
-					Next.js. I have decent knowledge in back-end development and worked
-					with Node.js, Java, Python and Firebase.
+					<span className="italic">Full-stack Web Developer</span> with a
+					Computer Science degree from Bilkent University. I love keeping up
+					with the latest tech and creating efficient solutions through
+					technology, always ready to tackle challenges with a strategic and
+					analytical approach.
 				</p>
 			</article>
 			<div>
