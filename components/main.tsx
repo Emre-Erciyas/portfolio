@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { AiFillLinkedin, AiFillGithub, AiFillFilePdf } from 'react-icons/ai';
 import gull from '@/public/gull.avif';
 import Link from 'next/link';
@@ -13,10 +12,10 @@ export default function main(props: Props) {
 			ref={props.homeRef}
 			className={`relative h-screen w-full bg-gradient-to-br from-[#2B2B33] to-[#3e3e48] m-0`}
 		>
-			<div className=" flex flex-col h-screen top-0 justify-around items-center absolute left-[10%] lg:flex-row lg:top-1/3 lg:h-fit w-4/5">
+			<div className=" flex flex-col h-screen top-0 justify-around items-center absolute left-[10%] lg:flex-row lg:top-1/3 lg:h-fit w-4/5 ">
 				<div
 					data-id="0"
-					className={`mt-8 flex flex-col justify-center items-center lg:mt-0 lg:justify-start lg:items-start`}
+					className={`flex flex-col justify-center items-center lg:justify-start lg:items-start mb-20 lg:mb-0`}
 				>
 					<h1
 						className={`text-[#fefeff] text-5xl lg:text-[3.4rem] 3xl:text-7xl mb-7 ml-1 font-medium tracking-wide`}

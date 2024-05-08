@@ -2,9 +2,6 @@
 import React, { MutableRefObject } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Fredericka_the_Great } from 'next/font/google';
-
-const txt = Fredericka_the_Great({ weight: '400', subsets: ['latin'] });
 
 interface Props {
 	homeRef: MutableRefObject<null | HTMLDivElement>;
@@ -41,7 +38,7 @@ export default function Header(props: Props): JSX.Element {
 					className="absolute right-4 3xl:right-6 top-2 h-9 w-9 text-[#fefeff] hover:cursor-pointer md:hidden"
 					onClick={handleMenu}
 				/>
-				<div className="hidden md:flex justify-end ">
+				<div className="justify-end hidden md:flex ">
 					<button
 						type="button"
 						onClick={handleHome}
@@ -90,7 +87,7 @@ export default function Header(props: Props): JSX.Element {
 						setIsMenuOpen(false);
 						handleHome();
 					}}
-					className={`mb-4 text-5xl xs:text-7xl text-[#fefeff] tracking-wide hover:text-[#4d4d55] duration-[400ms] ${txt.className} p-3 pt-2 pb-2 3xl:text-9xl`}
+					className={`mb-4 text-5xl xs:text-7xl text-[#fefeff] tracking-wide hover:text-[#4d4d55] duration-[400ms] p-3 pt-2 pb-2 3xl:text-9xl`}
 				>
 					Home
 				</button>
@@ -99,7 +96,7 @@ export default function Header(props: Props): JSX.Element {
 						setIsMenuOpen(false);
 						handleProject();
 					}}
-					className={`mb-4 text-5xl  xs:text-7xl text-[#fefeff] tracking-wide duration-[400ms] hover:text-[#4d4d55] ${txt.className} p-3 pt-2 pb-2 3xl:text-9xl`}
+					className={`mb-4 text-5xl  xs:text-7xl text-[#fefeff] tracking-wide duration-[400ms] hover:text-[#4d4d55] p-3 pt-2 pb-2 3xl:text-9xl`}
 				>
 					Projects
 				</button>
@@ -108,7 +105,7 @@ export default function Header(props: Props): JSX.Element {
 						setIsMenuOpen(false);
 						handleAbout();
 					}}
-					className={`mb-4 text-5xl  xs:text-7xl text-[#fefeff] tracking-wide duration-[400ms] hover:text-[#4d4d55] ${txt.className} p-3 pt-2 pb-2 3xl:text-9xl`}
+					className={`mb-4 text-5xl  xs:text-7xl text-[#fefeff] tracking-wide duration-[400ms] hover:text-[#4d4d55] p-3 pt-2 pb-2 3xl:text-9xl`}
 				>
 					About
 				</button>
@@ -117,7 +114,7 @@ export default function Header(props: Props): JSX.Element {
 						setIsMenuOpen(false);
 						handleContact();
 					}}
-					className={`mb-4 text-5xl  xs:text-7xl text-[#fefeff] tracking-wide hover:text-[#4d4d55] duration-[400ms] ${txt.className} p-3 pt-2 pb-2 3xl:text-9xl`}
+					className={`mb-4 text-5xl  xs:text-7xl text-[#fefeff] tracking-wide hover:text-[#4d4d55] duration-[400ms] p-3 pt-2 pb-2 3xl:text-9xl`}
 				>
 					Contact
 				</button>
