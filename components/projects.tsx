@@ -1,13 +1,13 @@
 import React, { MutableRefObject } from 'react';
 import Project from './project';
-import Crush from '@/public/Crush.svg';
+import Crush from '@/public/Crush.avif';
 import {
 	SiNextdotjs,
 	SiFirebase,
 	SiTailwindcss,
 	SiTypescript,
 } from 'react-icons/si';
-import Portfolio from '@/public/Portfolio.svg';
+import Portfolio from '@/public/Portfolio.avif';
 
 interface Props {
 	projectsRef: MutableRefObject<null>;
@@ -24,7 +24,7 @@ export default function Projects(props: Props) {
 			>
 				Projects
 			</h1>
-			<div className="w-full flex flex-col justify-center items-center lg:items-baseline">
+			<div className="flex flex-col items-center justify-center w-full lg:items-baseline">
 				<Project
 					staticIMG={Crush}
 					name="Fruit Crush"

@@ -52,12 +52,7 @@ export default function Project(props: Props) {
 				className="relative rounded-lg md:m-5 mt-5  md:mr-0 w-[95%] md:max-w-[min(480px,_60%)] lg:max-w-[min(560px,_60%)] xl:max-w-[min(600px,_60%)] overflow-hidden"
 				href={props.source}
 			>
-				<Image
-					className="w-full"
-					src={props.staticIMG}
-					alt="Project Image"
-					priority
-				/>
+				<img className="w-full" src={props.staticIMG.src} alt="Project Image" />
 			</Link>
 			<div className="relative flex flex-col md:w-1/2 3xl:w-full items-center mx-3 md:h-[400px] xl:h-[440px]">
 				<h1 className={`mt-5 text-[#2B2B33] text-xl xl:text-3xl 3xl:text-5xl`}>
@@ -68,7 +63,7 @@ export default function Project(props: Props) {
 				>
 					{props.description}
 				</p>
-				<div className="w-full mt-6 xl:mt-8 3xl:mt-10 flex justify-center mb-24 xl:mb-28 2xl:mb-40">
+				<div className="flex justify-center w-full mt-6 mb-24 xl:mt-8 3xl:mt-10 xl:mb-28 2xl:mb-40">
 					{props.stack.map((Element: IconType, index) => {
 						return (
 							<Element
