@@ -17,7 +17,7 @@ export default function Footer(props: Props) {
 	const [message, setMessage] = useState('');
 	const [isVisible, setIsVisible] = useState(false);
 	useEffect(() => {
-		let observerRefValue: MutableRefObject<HTMLDivElement> | null = null;
+		let observerRefValue: MutableRefObject<HTMLDivElement> | null;
 		const observer = new IntersectionObserver(
 			([entry]) => {
 				setIsVisible(entry.isIntersecting);

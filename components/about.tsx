@@ -12,8 +12,8 @@ export default function About(props: Props) {
 	const ref1 = React.useRef(null);
 	const ref2 = React.useRef(null);
 	React.useEffect(() => {
-		let observerRefValue1: MutableRefObject<HTMLDivElement> | null = null;
-		let observerRefValue2: MutableRefObject<HTMLDivElement> | null = null;
+		let observerRefValue1: MutableRefObject<HTMLDivElement> | null;
+		let observerRefValue2: MutableRefObject<HTMLDivElement> | null;
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
