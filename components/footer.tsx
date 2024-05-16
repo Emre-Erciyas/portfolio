@@ -39,15 +39,16 @@ export default function Footer(props: Props) {
 		};
 	}, []);
 
-	function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
+	async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		try {
-			emailjs.sendForm(
+			const deneme = await emailjs.sendForm(
 				process.env.NEXT_PUBLIC_SERVICE_ID!,
 				process.env.NEXT_PUBLIC_TEMPLATE_ID!,
 				formRef.current!,
 				process.env.NEXT_PUBLIC_PUBLIC_KEY
 			);
+
 			setName('');
 			setEmail('');
 			setMessage('');
