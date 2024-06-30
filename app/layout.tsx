@@ -1,5 +1,6 @@
 import './globals.css';
 import { EB_Garamond } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
 	title: 'Emre Erciyas',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`scrollbar ${garamond.className}`}>{children}</body>
+			<body className={`scrollbar ${garamond.className}`}>
+				{children}
+				<Analytics />
+			</body>
 		</html>
 	);
 }
